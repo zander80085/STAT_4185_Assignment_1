@@ -44,7 +44,7 @@ encrypted_file.close()
 def decryption(cipher, encrypted_message):
     reversed_dict = {}
 
-    for key, value in cipher:
+    for key, value in cipher.items():
         reversed_dict[value] = key
 
     decrypted_message = ""
